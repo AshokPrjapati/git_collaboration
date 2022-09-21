@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 95%;
+            margin: auto;
+            display: flex;
+            border: 0px solid red;
+        }
+        #container > div{
+            width: 50%;
+            height: 100%;
+            border: 0px dashed green;
+        }
+        div > div{
+            margin: auto;
+            width: 29%;
+            border: 0px solid red;
+        }
+        img{
+            height: 100%;
+        }
+
+        p{
+            font-family: Calibri;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 20px;
+        }
+        div + p + p{
+            font-weight: normal;
+            color: grey;
+        }
+        .dis{
+            font-weight: normal;
+            color: grey;
+            text-decoration: line-through;
+        }
+        .dis + span{
+            color: rgb(14, 167, 14);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <div>
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIHwaanUQVN7hDP5qnrJGFD-9F__gh57Ur8g&usqp=CAU" 
+             alt="">
+            </div>
+             <p>Pause</p>
+             <p>Men Cotton Long Sleeves Shrung</p2>
+             <p>$ 359 <span class="dis">$1499</span> <span>-76%</span> </p>
+        </div>
+        <div>
+            <div>
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIHwaanUQVN7hDP5qnrJGFD-9F__gh57Ur8g&usqp=CAU" 
+             alt="">
+            </div>
+             <p>JUBINATION</p2>
+             <p>Men Wool Sleeves Sweater Pack of 1</p>
+             <p>$ 799 <span class="dis">$1499</span> <span>-47%</span> </p>
+        </div>
+    </div>
+</body>
+</html>
