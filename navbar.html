@@ -1,79 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>navbar</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            color: white;
-            font-size: 14px;
-        }
-        #container{
-            /* border: 1px solid red; */
-            width: 99%;
-            display: flex;
-            justify-content: space-between;
-            height: 50px;
-            border-radius: 15px;
-            background-color: rgb(29,41,56);
-            margin: auto;
-        }
-        #container > div:nth-child(1){
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 14px;
+      }
+      #container {
+        /* border: 1px solid red; */
+        width: 99%;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        border-radius: 15px;
+        background-color: rgb(29, 41, 56);
+        margin: auto;
+      }
+      #container > div:nth-child(1) {
         display: flex;
         justify-content: center;
         width: 8%;
         align-items: center;
         /* border: 3px solid gray; */
         border-radius: 15px;
-        background-color: rgb(29,41,56);
+        background-color: rgb(29, 41, 56);
+      }
+      #container > div:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 2px solid blue; */
+        width: 30%;
+        align-items: center;
+        border-radius: 15px;
+        background-color: rgb(29, 41, 56);
+      }
+      @media all and (min-width: 500px) and (max-width: 700px) {
+        #container {
+          display: flex;
+          justify-content: space-around;
         }
-        #container > div:nth-child(2){
-            display: flex;
-            justify-content: space-evenly;
-            /* border: 2px solid blue; */
-            width: 30%;
-            align-items: center;
-            border-radius: 15px;
-            background-color: rgb(29,41,56);
+        #container > div:nth-child(2) {
+          width: 40%;
         }
-        @media all and (min-width:500px) and (max-width:700px){
-            #container{
-            display: flex;
-            justify-content: space-around;
-
+      }
+      @media all and (min-width: 280px) and (max-width: 499px) {
+        #container {
+          justify-content: space-around;
         }
-        #container > div:nth-child(2){
-            width: 40%;
+        #container > div:nth-child(2) {
+          width: 60%;
         }
-        }
-        @media all and (min-width: 280px) and (max-width: 499px){
-            #container{
-            justify-content: space-around;
-
-        }
-        #container > div:nth-child(2){
-            width: 60%;
-        }
-        }
-
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <!-- this is the div one "rebook" -->
-        <div>Reebok</div>
+      <!-- this is the div one "rebook" -->
+      <div>Reebok</div>
 
-        <!-- this div contain four child divs as well -->
-        <div>
-            <div>Men</div>
-            <div>Women</div>
-            <div>Login</div>
-            <div>Signup</div>
-        </div>
+      <!-- this div contain four child divs as well -->
+      <div>
+        <div>Men</div>
+        <div>Women</div>
+        <div>Login</div>
+        <div>Signup</div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
