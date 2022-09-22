@@ -40,6 +40,9 @@
         border-radius: 15px;
         background-color: rgb(29, 41, 56);
       }
+      a {
+        text-decoration: none;
+      }
       @media all and (min-width: 500px) and (max-width: 700px) {
         #container {
           display: flex;
@@ -53,12 +56,6 @@
         #container {
           justify-content: space-around;
         }
-      }
-      @media all and (min-width: 500px) and (max-width: 700px) {
-        #container {
-          display: flex;
-          justify-content: space-around;
-        }
         #container > div:nth-child(2) {
           width: 60%;
         }
@@ -68,14 +65,13 @@
   <body>
     <div id="container">
       <!-- this is the div one "rebook" -->
-      <div>Reebok</div>
-
+      <div><a href="">Reebok</a></div>
       <!-- this div contain four child divs as well -->
       <div>
-        <div>Men</div>
-        <div>Women</div>
-        <div>Login</div>
-        <div>Signup</div>
+        <div><a href="mens.html">Men</a></div>
+        <div><a href="">Women</a></div>
+        <div><a href="login.html">Login</a></div>
+        <div><a href="">Signup</a></div>
       </div>
     </div>
   </body>
